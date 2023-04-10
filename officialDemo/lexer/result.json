@@ -1,0 +1,211 @@
+{
+  WhiteSpace: {
+    name: 'WhiteSpace',
+    PATTERN: /\s+/,
+    tokenTypeIdx: 11,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false,
+    GROUP: 'This marks a skipped Token pattern, this means each token identified by it willbe consumed and then thrown into oblivion, this can be used to for example to completely ignore whitespace.'
+  },
+  Select: {
+    name: 'Select',
+    PATTERN: /SELECT/,
+    tokenTypeIdx: 4,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false,
+    LONGER_ALT: {
+      name: 'Identifier',
+      PATTERN: /[a-zA-Z]\w*/,
+      tokenTypeIdx: 3,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    }
+  },
+  From: {
+    name: 'From',
+    PATTERN: /FROM/,
+    tokenTypeIdx: 5,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false,
+    LONGER_ALT: {
+      name: 'Identifier',
+      PATTERN: /[a-zA-Z]\w*/,
+      tokenTypeIdx: 3,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    }
+  },
+  Where: {
+    name: 'Where',
+    PATTERN: /WHERE/,
+    tokenTypeIdx: 6,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false,
+    LONGER_ALT: {
+      name: 'Identifier',
+      PATTERN: /[a-zA-Z]\w*/,
+      tokenTypeIdx: 3,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    }
+  },
+  Comma: {
+    name: 'Comma',
+    PATTERN: /,/,
+    tokenTypeIdx: 7,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false
+  },
+  Identifier: {
+    name: 'Identifier',
+    PATTERN: /[a-zA-Z]\w*/,
+    tokenTypeIdx: 3,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false
+  },
+  Integer: {
+    name: 'Integer',
+    PATTERN: /0|[1-9]\d*/,
+    tokenTypeIdx: 8,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false
+  },
+  GreaterThan: {
+    name: 'GreaterThan',
+    PATTERN: />/,
+    tokenTypeIdx: 9,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false
+  },
+  LessThan: {
+    name: 'LessThan',
+    PATTERN: /</,
+    tokenTypeIdx: 10,
+    CATEGORIES: [],
+    categoryMatches: [],
+    categoryMatchesMap: {},
+    isParent: false
+  }
+}
+{
+	"tokens": [
+		{
+			"image": "SELECT",
+			"startOffset": 3,
+			"endOffset": 8,
+			"startLine": 1,
+			"endLine": 1,
+			"startColumn": 4,
+			"endColumn": 9,
+			"tokenTypeIdx": 4,
+			"tokenType": {
+				"name": "Select",
+				"PATTERN": {},
+				"tokenTypeIdx": 4,
+				"CATEGORIES": [],
+				"categoryMatches": [],
+				"categoryMatchesMap": {},
+				"isParent": false,
+				"LONGER_ALT": {
+					"name": "Identifier",
+					"PATTERN": {},
+					"tokenTypeIdx": 3,
+					"CATEGORIES": [],
+					"categoryMatches": [],
+					"categoryMatchesMap": {},
+					"isParent": false
+				}
+			}
+		},
+		{
+			"image": "column1",
+			"startOffset": 10,
+			"endOffset": 16,
+			"startLine": 1,
+			"endLine": 1,
+			"startColumn": 11,
+			"endColumn": 17,
+			"tokenTypeIdx": 3,
+			"tokenType": {
+				"name": "Identifier",
+				"PATTERN": {},
+				"tokenTypeIdx": 3,
+				"CATEGORIES": [],
+				"categoryMatches": [],
+				"categoryMatchesMap": {},
+				"isParent": false
+			}
+		},
+		{
+			"image": "FROM",
+			"startOffset": 18,
+			"endOffset": 21,
+			"startLine": 1,
+			"endLine": 1,
+			"startColumn": 19,
+			"endColumn": 22,
+			"tokenTypeIdx": 5,
+			"tokenType": {
+				"name": "From",
+				"PATTERN": {},
+				"tokenTypeIdx": 5,
+				"CATEGORIES": [],
+				"categoryMatches": [],
+				"categoryMatchesMap": {},
+				"isParent": false,
+				"LONGER_ALT": {
+					"name": "Identifier",
+					"PATTERN": {},
+					"tokenTypeIdx": 3,
+					"CATEGORIES": [],
+					"categoryMatches": [],
+					"categoryMatchesMap": {},
+					"isParent": false
+				}
+			}
+		},
+		{
+			"image": "table2",
+			"startOffset": 23,
+			"endOffset": 28,
+			"startLine": 1,
+			"endLine": 1,
+			"startColumn": 24,
+			"endColumn": 29,
+			"tokenTypeIdx": 3,
+			"tokenType": {
+				"name": "Identifier",
+				"PATTERN": {},
+				"tokenTypeIdx": 3,
+				"CATEGORIES": [],
+				"categoryMatches": [],
+				"categoryMatchesMap": {},
+				"isParent": false
+			}
+		}
+	],
+	"groups": {},
+	"errors": []
+}

@@ -1,0 +1,259 @@
+SelectParser {
+  definitionErrors: [],
+  selfAnalysisDone: true,
+  _errors: [],
+  errorMessageProvider: {
+    buildMismatchTokenMessage: [Function: buildMismatchTokenMessage],
+    buildNotAllInputParsedMessage: [Function: buildNotAllInputParsedMessage],
+    buildNoViableAltMessage: [Function: buildNoViableAltMessage],
+    buildEarlyExitMessage: [Function: buildEarlyExitMessage]
+  },
+  tokVector: [
+    {
+      image: 'SELECT',
+      startOffset: 0,
+      endOffset: 5,
+      startLine: 1,
+      endLine: 1,
+      startColumn: 1,
+      endColumn: 6,
+      tokenTypeIdx: 4,
+      tokenType: [Object]
+    },
+    {
+      image: 'column1',
+      startOffset: 7,
+      endOffset: 13,
+      startLine: 1,
+      endLine: 1,
+      startColumn: 8,
+      endColumn: 14,
+      tokenTypeIdx: 3,
+      tokenType: [Object]
+    },
+    {
+      image: 'FROM',
+      startOffset: 15,
+      endOffset: 18,
+      startLine: 1,
+      endLine: 1,
+      startColumn: 16,
+      endColumn: 19,
+      tokenTypeIdx: 5,
+      tokenType: [Object]
+    },
+    {
+      image: 'table2',
+      startOffset: 20,
+      endOffset: 25,
+      startLine: 1,
+      endLine: 1,
+      startColumn: 21,
+      endColumn: 26,
+      tokenTypeIdx: 3,
+      tokenType: [Object]
+    }
+  ],
+  tokVectorLength: 4,
+  currIdx: 3,
+  dynamicTokensEnabled: false,
+  maxLookahead: 3,
+  lookaheadStrategy: LLkLookaheadStrategy { maxLookahead: 3 },
+  lookAheadFuncsCache: Map(4) {
+    1049088 => [Function (anonymous)],
+    1054208 => [Function (anonymous)],
+    1069312 => [Function (anonymous)],
+    1073408 => [Function (anonymous)]
+  },
+  className: 'SelectParser',
+  shortRuleNameToFull: {
+    '1048576': 'selectStatement',
+    '1052672': 'selectClause',
+    '1056768': 'fromClause',
+    '1060864': 'whereClause',
+    '1064960': 'expression',
+    '1069056': 'atomicExpression',
+    '1073152': 'relationalOperator'
+  },
+  fullRuleNameToShort: {
+    selectStatement: 1048576,
+    selectClause: 1052672,
+    fromClause: 1056768,
+    whereClause: 1060864,
+    expression: 1064960,
+    atomicExpression: 1069056,
+    relationalOperator: 1073152
+  },
+  ruleShortNameIdx: 263,
+  tokenMatcher: [Function: tokenStructuredMatcherNoCategories],
+  subruleIdx: 0,
+  definedRulesNames: [
+    'selectStatement',
+    'selectClause',
+    'fromClause',
+    'whereClause',
+    'expression',
+    'atomicExpression',
+    'relationalOperator'
+  ],
+  tokensMap: {
+    WhiteSpace: {
+      name: 'WhiteSpace',
+      PATTERN: /\s+/,
+      tokenTypeIdx: 11,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false,
+      GROUP: 'This marks a skipped Token pattern, this means each token identified by it willbe consumed and then thrown into oblivion, this can be used to for example to completely ignore whitespace.'
+    },
+    Select: {
+      name: 'Select',
+      PATTERN: /SELECT/,
+      tokenTypeIdx: 4,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false,
+      LONGER_ALT: [Object]
+    },
+    From: {
+      name: 'From',
+      PATTERN: /FROM/,
+      tokenTypeIdx: 5,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false,
+      LONGER_ALT: [Object]
+    },
+    Where: {
+      name: 'Where',
+      PATTERN: /WHERE/,
+      tokenTypeIdx: 6,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false,
+      LONGER_ALT: [Object]
+    },
+    Comma: {
+      name: 'Comma',
+      PATTERN: /,/,
+      tokenTypeIdx: 7,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    },
+    Identifier: {
+      name: 'Identifier',
+      PATTERN: /[a-zA-Z]\w*/,
+      tokenTypeIdx: 3,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    },
+    Integer: {
+      name: 'Integer',
+      PATTERN: /0|[1-9]\d*/,
+      tokenTypeIdx: 8,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    },
+    GreaterThan: {
+      name: 'GreaterThan',
+      PATTERN: />/,
+      tokenTypeIdx: 9,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    },
+    LessThan: {
+      name: 'LessThan',
+      PATTERN: /</,
+      tokenTypeIdx: 10,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    },
+    EOF: {
+      name: 'EOF',
+      PATTERN: /NOT_APPLICABLE/,
+      tokenTypeIdx: 1,
+      CATEGORIES: [],
+      categoryMatches: [],
+      categoryMatchesMap: {},
+      isParent: false
+    }
+  },
+  isBackTrackingStack: [],
+  RULE_STACK: [],
+  RULE_OCCURRENCE_STACK: [],
+  gastProductionsCache: {
+    selectStatement: Rule { _definition: [Array], orgText: '', name: 'selectStatement' },
+    selectClause: Rule { _definition: [Array], orgText: '', name: 'selectClause' },
+    fromClause: Rule { _definition: [Array], orgText: '', name: 'fromClause' },
+    whereClause: Rule { _definition: [Array], orgText: '', name: 'whereClause' },
+    expression: Rule { _definition: [Array], orgText: '', name: 'expression' },
+    atomicExpression: Rule {
+      _definition: [Array],
+      orgText: '',
+      name: 'atomicExpression'
+    },
+    relationalOperator: Rule {
+      _definition: [Array],
+      orgText: '',
+      name: 'relationalOperator'
+    }
+  },
+  firstAfterRepMap: {},
+  resyncFollows: {},
+  recoveryEnabled: false,
+  CST_STACK: [],
+  outputCst: true,
+  nodeLocationTracking: 'none',
+  setNodeLocationFromToken: [Function: noop],
+  setNodeLocationFromNode: [Function: noop],
+  cstPostRule: [Function: noop],
+  setInitialNodeLocation: [Function: noop],
+  recordingProdStack: [],
+  RECORDING_PHASE: false,
+  traceInitMaxIdent: Infinity,
+  traceInitPerf: false,
+  traceInitIndent: -1,
+  skipValidations: false,
+  selectStatement: [Function: invokeRuleWithTry] {
+    ruleName: 'selectStatement',
+    originalGrammarAction: [Function (anonymous)]
+  },
+  selectClause: [Function: invokeRuleWithTry] {
+    ruleName: 'selectClause',
+    originalGrammarAction: [Function (anonymous)]
+  },
+  fromClause: [Function: invokeRuleWithTry] {
+    ruleName: 'fromClause',
+    originalGrammarAction: [Function (anonymous)]
+  },
+  whereClause: [Function: invokeRuleWithTry] {
+    ruleName: 'whereClause',
+    originalGrammarAction: [Function (anonymous)]
+  },
+  expression: [Function: invokeRuleWithTry] {
+    ruleName: 'expression',
+    originalGrammarAction: [Function (anonymous)]
+  },
+  atomicExpression: [Function: invokeRuleWithTry] {
+    ruleName: 'atomicExpression',
+    originalGrammarAction: [Function (anonymous)]
+  },
+  relationalOperator: [Function: invokeRuleWithTry] {
+    ruleName: 'relationalOperator',
+    originalGrammarAction: [Function (anonymous)]
+  }
+}
