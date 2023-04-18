@@ -1,0 +1,23 @@
+{
+	"type": "SELECT_STMT",
+	"selectClause": {
+		"type": "SELECT_CLAUSE",
+		"columns": [
+			"column1",
+			"column2"
+		]
+	},
+	"fromClause": {
+		"type": "FROM_CLAUSE",
+		"table": "table2"
+	},
+	"whereClause": {
+		"type": "WHERE_CLAUSE",
+		"condition": {
+			"type": "EXPRESSION",
+			"lhs": "column2",
+			"operator": ">",
+			"rhs": "3"
+		}
+	}
+}
